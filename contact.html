@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us!</title>
+    <title>Japan - Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&family=Michroma&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2aa5e9e01d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="contactbody">
+    <header>
+        <div class="navcontainer">
+            <div class="navitem">
+                <nav class="navbar">
+                    <h1 class="title"><a href="index.html">Japan <img class="titleflag"
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png"
+                                alt="jpflag"></a></h1>
+            </div>
+            <ul class="ul"> 
+                <li class="navtext"><a href="contact.html">Contact</a></li>
+                <li class="navtext"><a href="cities.html">Destinations</a></li>
+                <li class="navtext"><a href="media.html">Media</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contactcontainer">
+        <p class="contacttitle">
+            Contact Us
+        </p>
+
+        <form action="submit">
+            <div class="formcontainer">
+                <label for="name">Name :<input required type="text" name="name" id="name"></label>
+                <label for="email">Email :<input required placeholder="name@email.com" name="email"
+                        type="email"></label>
+                <label for="phone">Phone number :<input required type="text" name="phone" id="phone"></label>
+                <label for="citizenship">Citizenship :<input required type="text" name="citizen"
+                        id="citizenship"></label>
+            </div>
+            <div class="formcontainer1">
+                <textarea placeholder="Enter your message here" name="textarea" id="textarea" cols="90"
+                    rows="10"></textarea>
+            </div>
+            <div class="formbtn">
+                <button type="submit">Submit</button>
+                <button type="reset"><i class="fa-solid fa-rotate-right""></i></button>
+        </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
