@@ -5,6 +5,7 @@
     position: fixed;
     width: 100%;
     top: 0px;
+    z-index: 2;
 }
 
 body {
@@ -12,12 +13,22 @@ body {
     margin: 0px;
 }
 
-img {
+.tableimg {
     max-height: 364px;
     max-width: 583px;
     width: 40%;
     height: auto;
     border-radius: 2%;
+}
+
+.student {
+    position: absolute;
+    top: 100%;
+}
+
+.anime {
+    width: auto;
+    height: 70%;
 }
 
 .japan {
@@ -75,10 +86,14 @@ a {
     font-size: 200%;
 }
 
-.subcontainer {
+.subcontainer,
+.subcontainermain {
     display: flex;
-    margin-left: 5%;
-    margin-top: 1.5%;
+    justify-content: center;
+}
+
+.subcontainermain {
+    margin-top: 12%;
 }
 
 .subtitle {
@@ -99,6 +114,23 @@ a {
     font-size: 150%;
     font-weight: 200;
     margin-left: 10%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.para {
+    width: 40%;
+}
+
+.text1,
+.text2,
+.text3 {
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -216,10 +248,12 @@ li {
 }
 
 .indexbody {
-    background-position-x: 30%;
-    background-position-y: -130%;
-    background-size: cover;
+    background-position-x: 60%;
+    background-position-y: -100%;
+
     background-image: url("https://static.vecteezy.com/system/resources/previews/009/345/320/original/cherry-blossom-branch-with-pink-flowers-pink-sakura-flower-background-watercolor-cherry-blossom-cherry-blossom-branch-with-sakura-sakura-on-white-background-watercolor-cherry-bud-free-png.png");
+    background-size:120%;
+    background-repeat: no-repeat;
 }
 
 
@@ -289,6 +323,7 @@ li {
     background-color: rgba(0, 0, 0, 0.901);
     min-width: 100%;
     margin: 0px;
+
 }
 
 .footercontact {
